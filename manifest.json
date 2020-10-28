@@ -21,8 +21,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["lib/jquery-3.2.1.min.js","js/script.js"]
+      "matches": ["https://cart.jd.com/*"],
+      "js": ["lib/jquery-3.2.1.min.js","js/myScript.js"]
+    },
+    {
+      "matches": ["https://trade.jd.com/shopping/order/*"],
+      "js": ["lib/jquery-3.2.1.min.js","js/submitOrder.js"]
     }
   ]
 }
